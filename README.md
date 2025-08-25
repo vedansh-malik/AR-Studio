@@ -24,10 +24,10 @@
 ![AR Studio Interface](https://github.com/vedansh-malik/AR-Studio/blob/b7af6d764ba7a9da827f5fa89b9b12c9222570c0/Screenshot%202025-08-26%20000139.png)
 
 ### Model Upload & Preview
-![Model Upload](path/to/screenshot2.png)
+![Model Upload](https://github.com/vedansh-malik/AR-Studio/blob/b3d50716f2b94b4dd95d074c7614eb7be9519b60/Screenshot%202025-08-26%20000209.png)
 
 ### Generated AR Code
-![Generated Code](path/to/screenshot3.png)
+![Generated Code](https://github.com/vedansh-malik/AR-Studio/blob/b3d50716f2b94b4dd95d074c7614eb7be9519b60/Screenshot%202025-08-26%20000346.png)
 
 ##  Quick Start
 
