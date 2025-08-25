@@ -1,0 +1,367 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFD43B;
+  min-height: 100vh;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-app-header {
+  background-color: #faa405;
+  border-radius: 25px;
+  border: solid 2px;
+  border-bottom: solid 5px;
+  border-color: #183153;
+  box-shadow: 0 10px 30px #996b00a6;
+}
+
+.app-header {
+  text-align: center;
+  color: #0f2b53;
+  margin-bottom: 50px;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.upload-section, .preview-section {
+  background-color: whitesmoke;
+  color: #183153;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.upload-section:hover, .preview-section:hover {
+  transform: translateY(-5px);
+}
+
+.upload-area {
+  border: 3px dashed #667eea;
+  border-radius: 15px;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #f8f9ff, #e8edff);
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #764ba2;
+  background: linear-gradient(45deg, #e8edff, #f8f9ff);
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.file-preview {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.upload-btn {
+  background: #FFD43B;
+  border-color: #183153;
+  color: #183153;
+  border: solid 2px;
+  border-bottom: solid 5px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+.upload-btn:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px #996b00a6;
+  background: #FAB005;
+
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.ar-preview {
+  width: 100%;
+  height: 300px;
+  background: #000;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.camera-placeholder {
+  color: white;
+  text-align: center;
+}
+
+.camera-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+/* #ar-preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+#ar-preview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* ensures it fills container */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ar-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* keep overlay above video */
+}
+
+.model-indicator {
+  border: 3px solid #4CAF50;
+  border-radius: 15px;
+  padding: 20px;
+  background: rgba(76, 175, 80, 0.1);
+  animation: pulse 2s infinite;
+}
+
+.model-preview {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.05); }
+  100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1); }
+}
+
+.preview-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.preview-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border: solid 2px;
+  border-bottom: solid 5px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #FFD43B;
+  color: #183153;
+}
+
+.preview-btn:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px #996b00a6;
+  background: #FAB005;
+}
+
+.preview-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.code-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  margin-bottom: 50px;
+}
+
+.code-container {
+  background: #2d3748;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.code-display {
+  color: #e2e8f0;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.code-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.copy-btn, .download-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.download-btn {
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+}
+
+.copy-btn:hover, .download-btn:hover {
+  transform: scale(1.05);
+}
+
+.model-info {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.models-gallery {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.model-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+}
+
+.model-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #667eea;
+}
+
+.model-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.model-card p {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.generate-code-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.generate-code-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .code-actions {
+    flex-direction: column;
+  }
+  
+  .models-grid {
+    grid-template-columns: 1fr;
+  }
+}
