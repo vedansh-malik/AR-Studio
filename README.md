@@ -21,7 +21,7 @@
 ##  Screenshots
 
 ### Main Interface
-![AR Studio Interface](path/to/Screenshot 2025-08-26 000139.png)
+![AR Studio Interface](https://github.com/vedansh-malik/AR-Studio/blob/b7af6d764ba7a9da827f5fa89b9b12c9222570c0/Screenshot%202025-08-26%20000139.png)
 
 ### Model Upload & Preview
 ![Model Upload](path/to/screenshot2.png)
