@@ -21,7 +21,7 @@
 ##  Screenshots
 
 ### Main Interface
-![AR Studio Interface](path/to/screenshot1.png)
+![AR Studio Interface](path/to/Screenshot 2025-08-26 000139.png)
 
 ### Model Upload & Preview
 ![Model Upload](path/to/screenshot2.png)
