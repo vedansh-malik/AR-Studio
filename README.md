@@ -130,9 +130,10 @@ We welcome contributions!
 ![GitHub issues](https://img.shields.io/github/issues/yourusername/ar-studio)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/ar-studio)
 
-## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/ar-studio&type=Date)](https://star-history.com/#vedansh-malik/ar-studio&Date)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=vedansh-malik/ar-studio&type=Date)](https://www.star-history.com/#vedansh-malik/ar-studio&Date)
 
 ---
 
