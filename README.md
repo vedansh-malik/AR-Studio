@@ -104,29 +104,10 @@
 - **Architecture**: Building and interior design previews
 - **Gaming**: AR game prototyping and demos
 
-## 🔧 Configuration
-
-### Environment Variables
-```env
-REACT_APP_MAX_FILE_SIZE=10485760  # 10MB in bytes
-REACT_APP_API_URL=your-api-endpoint
-REACT_APP_ANALYTICS_ID=your-analytics-id
-```
-
-### Custom Deployment
-```javascript
-// Deploy generated AR code to any hosting service
-// No backend required - pure client-side solution
-const deployConfig = {
-  target: 'static-hosting', // Netlify, Vercel, GitHub Pages
-  optimize: true,
-  minify: true
-};
-```
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! 
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -134,9 +115,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -160,7 +138,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
+**Made with ❤️ by [Your Name](https://github.com/vedansh-malik)**
 
 [⭐ Star this repo](https://github.com/yourusername/ar-studio) • [🐛 Report Bug](https://github.com/yourusername/ar-studio/issues) • [✨ Request Feature](https://github.com/yourusername/ar-studio/issues)
 
